@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../style/login.min.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="contain">
+            <div class="logo">
+                <img src="https://id1.cloud.huawei.com/CAS/up/idmw_rss_53/logos/HUAWEI.svg" alt="华为商城">
+            </div>
+            <div class="title">
+                <span class="split-line">|</span>
+                <b class="headtitle">华为商城</b>
+            </div>
+        </div>
+    </div>
+    <div id="contain">
+        <div class="header">
+            <span>华为账号登录</span>
+        </div>
+        <div class="left-aside">
+            <div class="contain">
+                <div class="qrcode">
+                    <canvas width="160px" height="160px" style="display: none;">
+                    <img src="" alt="">
+                </div>
+                <span>若您使用华为手机，请进入“设置”>“华为帐号”扫码登录。</span>
+            </div>
+        </div>
+        <div style="width: 1px;height: 300px;background-color: rgba(0, 0, 0,0.1);float: left;margin-left: 100px;"></div>
+        <div id="right-aside">
+            <div class="login">
+                <div class="input-group input-group-lg d1">
+                    <span class="input-group-addon" id="sizing-addon1"></span>
+                    <input type="text" class="form-control" placeholder="手机号码/邮箱地址/华为号" aria-describedby="sizing-addon1">
+                </div>
+                <div class="input-group input-group-lg d2">
+                    <span class="input-group-addon" id="sizing-addon1"></span>
+                    <input type="text" class="form-control" placeholder="密码" aria-describedby="sizing-addon1">
+                </div>
+                <span>短信验证码登录</span>
+                <input type="submit" disabled class="btn btn-default" name="submit" id="submit" value="登录">
+                <ul class="list-inline">
+                    <li>注册</li>
+                    <li class="hr">|</li>
+                    <li>忘记密码</li>
+                    <li class="hr">|</li>
+                    <li>更多</li>
+                </ul>
+                <ul class="list-inline list2">
+                    <li><img src="../img/login/icon/third_qq.svg" alt="qq"></li>
+                    <li><img src="../img/login/icon/third_alipay.svg" alt="alipay"></li>
+                    <li><img src="../img/login/icon/third_weixin.svg" alt="weixin"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <ul class="list-inline">
+            <li><a href="#">华为帐号与云空间用户协议</a></li>
+            <li class="hr">|</li>
+            <li><a href="#">关于华为帐号与云空间隐私的声明</a></li>
+            <li class="hr">|</li>
+            <li><a href="#">常见问题</a></li>
+            <li class="hr">|</li>
+            <li><a href="#">Cookies</a></li>
+        </ul>
+        <p>Copyright © 2011-2020 华为软件技术有限公司 版权所有 保留一切权利 苏B2-20070200号 | 苏ICP备09062682号-9</p>
+    </div>
+
+</body>
+
+</html>
