@@ -603,10 +603,17 @@ $w:200px;
         width: $w;
         position: absolute;
         top: 18px;
+        font-size: 16px;
         .nav_li {
             position: relative;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 0 28px rgba(0, 0, 0, 0.08);
             li:hover {
-                background: #fff;
+                background: #ffffff;
+                border-radius: 10px 0 0 10px;
+                background-color: rgba(255, 255, 255, 0.95);
+                box-shadow: 0 0 28px rgba(0, 0, 0, 0.08);
                 >div {
                     display: block;
                 }
@@ -615,7 +622,6 @@ $w:200px;
         .nav_li li {
             width: $w;
             height: 44px;
-            background-color: #f8f8f8;
             >div {
                 width: 484px;
                 padding-left: 32px;

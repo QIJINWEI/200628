@@ -105,3 +105,130 @@
         }
     }
 }
+
+@mixin bannerleftmeun() {
+    .piece1 {
+        width: 242px;
+        height: 440px;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        h2 {
+            width: 240px;
+            height: 60px;
+            margin-bottom: 5px;
+            img {
+                width: 44px;
+                height: 46px;
+                float: left;
+                padding: 8px;
+            }
+            span {
+                font-size: 16px;
+                line-height: 60px;
+                height: 60px;
+                color: #666;
+                font-weight: normal;
+                display: block;
+                float: left;
+            }
+        }
+        h2:hover {
+            background: rgb(240, 240, 240);
+            border-radius: 8px;
+        }
+        .box01 {
+            width: 140px;
+            height: 40px;
+            border: 1px solid #dfdfdf;
+            border-radius: 20px;
+            h4 {
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                border: 1px solid #dfdfdf;
+                border-top: 0;
+                border-left: 0;
+                border-bottom: 0;
+                float: left;
+                color: #666;
+                position: relative;
+                i {
+                    position: absolute;
+                    left: 10px;
+                    top: 10px;
+                }
+            }
+            h5 {
+                float: left;
+                color: #999;
+                font-size: 13px;
+                height: 40px;
+                line-height: 40px;
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
+$w:200px;
+.nav_main {
+    .nav {
+        width: $w;
+        position: absolute;
+        top: 18px;
+        .nav_li {
+            position: relative;
+            li:hover {
+                background: #fff;
+                >div {
+                    display: block;
+                }
+            }
+        }
+        .nav_li li {
+            width: $w;
+            height: 44px;
+            background-color: #f8f8f8;
+            >div {
+                width: 484px;
+                padding-left: 32px;
+                position: absolute;
+                top: 0px;
+                left: $w;
+                background: #fff;
+                display: none;
+            }
+            .part_0 {
+                width: 726px;
+                @include bannerleftmeun();
+            }
+            .part_1 {
+                width: 484px;
+                @include bannerleftmeun();
+            }
+            .part_2 {
+                width: $w;
+                height: 440px;
+            }
+            p {
+                color: #848484;
+                ;
+                width: 184px;
+                line-height: 24px;
+                padding: 10px 0 0 16px;
+                position: relative;
+                span:first-child:hover {
+                    color: #ca141d;
+                }
+                span:last-child {
+                    position: absolute;
+                    top: 8px;
+                    right: 15px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
