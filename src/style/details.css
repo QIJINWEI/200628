@@ -1,0 +1,126 @@
+.shortcut {
+  width: 100%;
+  font-size: 12px;
+  background-color: #2e2828;
+  height: 36px;
+  padding: 0;
+}
+
+.shortcut .row {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.shortcut .row ul {
+  list-style: none;
+}
+
+.shortcut .row ul li {
+  height: 35px;
+  line-height: 35px;
+  margin: 0;
+}
+
+.shortcut .row ul li a {
+  display: inline;
+  padding: 0 8px;
+  color: #afafaf;
+}
+
+.shortcut .row ul li a:hover {
+  background-color: #2e2828;
+  color: white;
+}
+
+.shortcut .row ul li span {
+  color: #414141;
+}
+
+.shortcut .row ul li:first-child a {
+  padding: 0 8px 0 0;
+}
+
+.shortcut .row .left {
+  float: left;
+  padding: 0;
+}
+
+.shortcut .row .right {
+  float: right;
+  padding: 0;
+}
+
+.header {
+  padding: 18px 0 15px;
+  width: 100%;
+}
+
+.header .row {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header .row .left {
+  float: left;
+  padding: 0;
+}
+
+.header .row .left .logo {
+  float: left;
+  margin-right: 34px;
+}
+
+.header .row .left .logo img {
+  width: 205px;
+  height: 36px;
+}
+
+.header .row .left ul {
+  float: left;
+  height: 40px;
+}
+
+.header .row .left ul li {
+  margin-right: 24px;
+}
+
+.header .row .left ul li img {
+  width: 74px;
+  height: 24px;
+  margin-bottom: 7px;
+}
+
+.header .row .left ul li a {
+  color: #333;
+  font-size: 16px;
+  padding: 0px;
+  line-height: 40px;
+}
+
+.header .row .right {
+  float: right;
+  padding: 0;
+}
+
+.header .row .right input {
+  width: 205px;
+  height: 30px;
+  border-right: none;
+  border-radius: 16px 0 0 16px;
+  background-color: #f0f0f0;
+}
+
+.header .row .right .right {
+  width: 35px;
+  height: 30px;
+  padding-right: 10px;
+  border-left: none;
+}
+
+.header .row .right .right .btn {
+  margin: 0;
+  padding: 3.8px 10px 3.8px 0px;
+  border-left: none;
+  border-radius: 0 16px 16px 0;
+  background-color: #f0f0f0;
+}
