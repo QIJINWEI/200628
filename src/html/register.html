@@ -11,6 +11,7 @@
     <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../style/register.min.css">
     <link rel="stylesheet" href="../style/commom.css">
+    <link rel="stylesheet" href="../img/iconfont/iconfont.css">
 </head>
 
 <body>
@@ -26,44 +27,43 @@
         </div>
     </div>
 
-    <div id="contain">
-        <div class="register-wrap">
-            <div class="mobile-register">
-                <span>手机号注册</span>
-            </div>
-            <div class="email-register">
-                <span>邮箱地址注册</span>
-            </div>
-        </div>
 
-        <div class="register-content">
-            <div class="register-detail">
-                <div class="register-title">
-                    <p>华为帐号注册</p>
-                    <p>已有账号，<a href="#">去登录></a></p>
-                </div>
-
-                <div class="btn-group" role="group" aria-label="...">
-                    <button type="button" class="btn btn-default">1</button>
-                    <button type="button" class="btn btn-default">2</button>
-
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                        <span class="caret"></span>
-                      </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Dropdown link</a></li>
-                            <li><a href="#">Dropdown link</a></li>
-                        </ul>
+    <!-- Nav tabs -->
+    <div id="main">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                    <div class="mobile-register">
+                        <span class="iconfont icon-shouji"></span>
+                        <i>手机号注册</i>
                     </div>
+                </a>
+            </li>
+            <li role="presentation">
+                <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+                    <div class="youxiang">
+                        <span class="iconfont icon-youxiang"></span>
+                        <i>邮箱地址注册</i>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+                <h2>华为帐号注册</h2>
+                <h3>已有账号，<a href="#">去登录></a></h3>
+
+                <div class="cty-select">
+                    <p>国家/地区</p>
+                    <i>中国<span class="caret"></span></i>
                 </div>
 
 
                 <div class="mobile-num">
-                    <select name="" id="" class="form-control"></select>
-                    <span>|</span>
-                    <input type="text" name="" id="" placeholder="手机号">
+                    <p>+86(中国)<span class="caret"></span><i>|</i></p>
+                    <input type="text" name="mobile-num" id="mobile-num" placeholder="手机号">
                 </div>
 
                 <div class="verify">
@@ -93,7 +93,7 @@
             </div>
         </div>
     </div>
-
+    </div>
 
     <div id="footer">
         <ul class="list-inline">

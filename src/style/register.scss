@@ -60,7 +60,7 @@ body {
             float: left;
             margin-left: 10px;
             .split-line {
-                color: #c2c2c2;
+                color: #000000;
                 line-height: 28px;
             }
             .headtitle {
@@ -68,83 +68,122 @@ body {
                 margin-left: 10px;
                 font-size: 16px;
                 font-weight: bold;
+                color: #000000;
             }
         }
     }
 }
 
-#contain {
+#main {
     width: 1200px;
+    min-height: 700px;
     height: calc(100% - 158px);
     margin: 0 auto;
-    .register-wrap {
+    .nav {
+        margin-top: 40px;
         float: left;
-        .mobile-register {
+        border-bottom: 0px;
+        li {
             width: 272px;
-            height: 50.4px;
-            padding: 16px;
-            background-color: rbga(0, 0, 0, 0.05);
-            margin-top: 40px;
-            span {
+            height: 50px;
+            float: none;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 0px;
+            a {
+                display: block;
+                border: none;
+                color: #191919;
                 font-size: 14px;
+                background-color: rgba(0, 0, 0, 0);
+                cursor: pointer;
+                .mobile-register {
+                    margin-right: 10px;
+                    vertical-align: middle;
+                }
+                span {
+                    margin-right: 5px;
+                }
             }
         }
-        .email-register {
-            width: 272px;
-            height: 50.4em;
-            padding: 16px;
-            span {
-                font-size: 14px;
-            }
+        li:hover {
+            background-color: rgba(0, 125, 255, .1);
+        }
+        .active {
+            background-color: rgba(0, 0, 0, 0.05);
         }
     }
-    .register-content {
+    .tab-content {
         width: 960px;
         height: 789px;
         margin: auto;
-        .register-detail {
+        .tab-pane {
             padding: 60px 260px 38px;
-            .register-title {
-                width: 440px;
-                height: 73px;
-                margin: 10px 0 40px;
-                p:nth-child(1) {
-                    font-size: 32px;
-                    text-align: center;
-                }
-                p:nth-child(2) {
-                    text-align: center;
-                    font-size: 18px;
+            h2 {
+                font-size: 32px;
+                text-align: center;
+                color: #000000;
+            }
+            h3 {
+                text-align: center;
+                font-size: 18px;
+                color: #000000;
+                a {
+                    color: rgba(0, 125, 255, 1);
                 }
             }
-            .cty-select {
+            div {
                 width: 442px;
                 height: 50px;
+                margin-top: 20px;
+                background-color: rgba(0, 0, 0, 0.05);
                 border-radius: 8px;
-                background: rgba(0, 0, 0, 0.05);
-                margin-top: 30px;
-                span {
+            }
+            .cty-select {
+                margin-top: 50px;
+                p {
                     float: left;
+                    font-size: 14px;
+                    line-height: 50px;
+                    margin: 0 16px;
+                    color: #000000;
                 }
-                select {
-                    border: none;
-                    background-color: raba(0, 0, 0, 0);
-                    float: left;
+                i {
+                    float: right;
+                    font-size: 14px;
+                    line-height: 50px;
+                    margin: 0 16px;
+                    color: #000000;
+                }
+                span {
+                    border-top: 6px dashed;
+                    border-right: 5px solid transparent;
+                    border-left: 5px solid transparent;
+                    line-height: 50px;
+                    margin: 0 16px 0 8px;
                 }
             }
             .mobile-num {
-                width: 442px;
-                height: 50px;
-                border-radius: 8px;
-                background: rgba(0, 0, 0, 0.05);
-                margin-top: 30px;
-            }
-            .verify {
-                width: 442px;
-                height: 50px;
-                border-radius: 8px;
-                background: rgba(0, 0, 0, 0.05);
-                margin-top: 30px;
+                p {
+                    float: left;
+                    font-size: 14px;
+                    line-height: 50px;
+                    margin: 0 16px;
+                    color: #000000;
+                    span {
+                        border-top: 6px dashed;
+                        border-right: 5px solid transparent;
+                        border-left: 5px solid transparent;
+                        line-height: 50px;
+                        margin: 0 16px 0 8px;
+                    }
+                    i {
+                        font-size: 20px;
+                        margin: 0;
+                        color: rgba(0, 0, 0, .1);
+                        line-height: 50px;
+                    }
+                }
             }
         }
     }

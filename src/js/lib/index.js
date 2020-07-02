@@ -12,26 +12,25 @@ define(['jquery'], function($) {
                     let temp = '';
                     res.forEach(elm => {
                         // console.log(elm.pic);
-                        console.log(elm.pic);
+                        // console.log(elm.pic);
                         let pic = JSON.parse(elm.pic);
                         console.log(pic);
-                        temp += `<li class="item">
-                            <a href="${baseUrl}/src/html/product.html?id=${elm.id}">
-                                <div class="p-pic">
-                                    <img src="${baseUrl}/src/${pic[0].src}" alt="${baseUrl}/src/${pic[0].title}">
-                                </div>
-                                <div class="p-title">
-                                    ${elm.title}
-                                </div>
-                                <div class="p-price"><span class="yuan">￥</span>${elm.price}</div>
-                            </a>
-                        </li>`;
+                        temp += `<li>
+                        <a href="${baseUrl}/src/html/product.html?id=${elm.id}" target="_blank">
+                        <div class="phone01">
+                            <img src="${baseUrl}/src/${pic[0].src}" alt="${baseUrl}/src/${pic[0].title}">
+                        </div>
+                        <p>${elm.title[0]}</p>
+                        <p>${elm.title[1]}</p>
+                        <p>${elm.price}</p>
+                        </a>
+                    </li>`;
                     });
 
                     $('.list').html(temp);
 
                 }
             });
-        }
+        },
     }
 });

@@ -67,7 +67,7 @@ body {
 }
 
 #header .contain .title .split-line {
-  color: #c2c2c2;
+  color: #000000;
   line-height: 28px;
 }
 
@@ -76,98 +76,140 @@ body {
   margin-left: 10px;
   font-size: 16px;
   font-weight: bold;
+  color: #000000;
 }
 
-#contain {
+#main {
   width: 1200px;
+  min-height: 700px;
   height: calc(100% - 158px);
   margin: 0 auto;
 }
 
-#contain .register-wrap {
-  float: left;
-}
-
-#contain .register-wrap .mobile-register {
-  width: 272px;
-  height: 50.4px;
-  padding: 16px;
-  background-color: rbga(0, 0, 0, 0.05);
+#main .nav {
   margin-top: 40px;
+  float: left;
+  border-bottom: 0px;
 }
 
-#contain .register-wrap .mobile-register span {
-  font-size: 14px;
-}
-
-#contain .register-wrap .email-register {
+#main .nav li {
   width: 272px;
-  height: 50.4em;
-  padding: 16px;
+  height: 50px;
+  float: none;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 0px;
 }
 
-#contain .register-wrap .email-register span {
+#main .nav li a {
+  display: block;
+  border: none;
+  color: #191919;
   font-size: 14px;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-#contain .register-content {
+#main .nav li a .mobile-register {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+#main .nav li a span {
+  margin-right: 5px;
+}
+
+#main .nav li:hover {
+  background-color: rgba(0, 125, 255, 0.1);
+}
+
+#main .nav .active {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#main .tab-content {
   width: 960px;
   height: 789px;
   margin: auto;
 }
 
-#contain .register-content .register-detail {
+#main .tab-content .tab-pane {
   padding: 60px 260px 38px;
 }
 
-#contain .register-content .register-detail .register-title {
-  width: 440px;
-  height: 73px;
-  margin: 10px 0 40px;
-}
-
-#contain .register-content .register-detail .register-title p:nth-child(1) {
+#main .tab-content .tab-pane h2 {
   font-size: 32px;
   text-align: center;
+  color: #000000;
 }
 
-#contain .register-content .register-detail .register-title p:nth-child(2) {
+#main .tab-content .tab-pane h3 {
   text-align: center;
   font-size: 18px;
+  color: #000000;
 }
 
-#contain .register-content .register-detail .cty-select {
+#main .tab-content .tab-pane h3 a {
+  color: #007dff;
+}
+
+#main .tab-content .tab-pane div {
   width: 442px;
   height: 50px;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.05);
   border-radius: 8px;
-  background: rgba(0, 0, 0, 0.05);
-  margin-top: 30px;
 }
 
-#contain .register-content .register-detail .cty-select span {
+#main .tab-content .tab-pane .cty-select {
+  margin-top: 50px;
+}
+
+#main .tab-content .tab-pane .cty-select p {
   float: left;
+  font-size: 14px;
+  line-height: 50px;
+  margin: 0 16px;
+  color: #000000;
 }
 
-#contain .register-content .register-detail .cty-select select {
-  border: none;
-  background-color: raba(0, 0, 0, 0);
+#main .tab-content .tab-pane .cty-select i {
+  float: right;
+  font-size: 14px;
+  line-height: 50px;
+  margin: 0 16px;
+  color: #000000;
+}
+
+#main .tab-content .tab-pane .cty-select span {
+  border-top: 6px dashed;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  line-height: 50px;
+  margin: 0 16px 0 8px;
+}
+
+#main .tab-content .tab-pane .mobile-num p {
   float: left;
+  font-size: 14px;
+  line-height: 50px;
+  margin: 0 16px;
+  color: #000000;
 }
 
-#contain .register-content .register-detail .mobile-num {
-  width: 442px;
-  height: 50px;
-  border-radius: 8px;
-  background: rgba(0, 0, 0, 0.05);
-  margin-top: 30px;
+#main .tab-content .tab-pane .mobile-num p span {
+  border-top: 6px dashed;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  line-height: 50px;
+  margin: 0 16px 0 8px;
 }
 
-#contain .register-content .register-detail .verify {
-  width: 442px;
-  height: 50px;
-  border-radius: 8px;
-  background: rgba(0, 0, 0, 0.05);
-  margin-top: 30px;
+#main .tab-content .tab-pane .mobile-num p i {
+  font-size: 20px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.1);
+  line-height: 50px;
 }
 
 #footer {
