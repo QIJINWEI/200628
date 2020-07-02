@@ -593,13 +593,14 @@ img {
 }
 
 .nav_main .nav .nav_li li > div {
-  width: 484px;
+  width: 494px;
   padding-left: 32px;
   position: absolute;
   top: 0px;
   left: 200px;
   background: #fff;
   display: none;
+  border-radius: 0 10px 10px 0;
 }
 
 .nav_main .nav .nav_li li .part_0 {
@@ -616,7 +617,7 @@ img {
 }
 
 .nav_main .nav .nav_li li .part_0 .piece1 h2 {
-  width: 240px;
+  width: 230px;
   height: 60px;
   margin-bottom: 5px;
 }
@@ -692,7 +693,7 @@ img {
 }
 
 .nav_main .nav .nav_li li .part_1 .piece1 h2 {
-  width: 240px;
+  width: 230px;
   height: 60px;
   margin-bottom: 5px;
 }

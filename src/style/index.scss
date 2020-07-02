@@ -458,7 +458,7 @@ $height:36px;
         flex-direction: column;
         justify-content: space-around;
         h2 {
-            width: 240px;
+            width: 230px;
             height: 60px;
             margin-bottom: 5px;
             img {
@@ -623,13 +623,14 @@ $w:200px;
             width: $w;
             height: 44px;
             >div {
-                width: 484px;
+                width: 494px;
                 padding-left: 32px;
                 position: absolute;
                 top: 0px;
                 left: $w;
                 background: #fff;
                 display: none;
+                border-radius: 0 10px 10px 0;
             }
             .part_0 {
                 width: 726px;

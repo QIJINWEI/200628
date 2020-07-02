@@ -22,5 +22,5 @@ if (isset($_POST['submit'])) {
     $repass=sha1($_POST['repass']);
     $conn->query("insert registry values(null,'$username','$password',NOW())"); //进入数据库
     //设置php跳转,跳转登录页面
-    header('location:http://10.31.162.26/huawei-project/src/login.html');
+    header('location:http://localhost/VMALL.COM/src/login.html');
 }
