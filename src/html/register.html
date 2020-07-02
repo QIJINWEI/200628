@@ -53,7 +53,7 @@
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="home">
                 <h2>华为帐号注册</h2>
-                <h3>已有账号，<a href="#">去登录></a></h3>
+                <h3>已有账号，<a href="http://localhost/vmall.com/src/html/login.html">去登录></a></h3>
 
                 <div class="cty-select">
                     <p>国家/地区</p>
@@ -61,35 +61,22 @@
                 </div>
 
 
-                <div class="mobile-num">
-                    <p>+86(中国)<span class="caret"></span><i>|</i></p>
-                    <input type="text" name="mobile-num" id="mobile-num" placeholder="手机号">
+                <div class="input-group mobile-num">
+                    <input type="text" class="form-control" aria-label="..." placeholder="请输入手机号">
                 </div>
 
-                <div class="verify">
-                    <input type="text" name="" id="">
-                    <a href="#" aria-disabled="true">获取验证码</a>
+                <div class="input-group mobile-num">
+                    <input type="text" class="form-control" aria-label="..." placeholder="短信验证码">
                 </div>
 
-                <div class="psd">
-                    <input type="password" name="" id="">
+                <div class="input-group mobile-num">
+                    <input type="text" class="form-control" aria-label="..." placeholder="密码">
                 </div>
 
-                <div class="psd-verify">
-                    <input type="password" name="" id="">
+                <div class="input-group mobile-num">
+                    <input type="text" class="form-control" aria-label="..." placeholder="确认密码">
                 </div>
-
-                <div class="birth">
-                    <span>出生日期</span>
-                    <select name="year" id="year"></select>
-                    <select name="month" id="month"></select>
-                    <select name="day" id="day"></select>
-                    <span></span>
-                </div>
-
-                <div class="submit">
-                    <input type="submit" name="submit" id="submit" value="注册">
-                </div>
+                <input type="submit" disabled class="btn btn-default" name="submit" id="submit" value="注册" disabled>
             </div>
         </div>
     </div>

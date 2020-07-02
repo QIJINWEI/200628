@@ -163,27 +163,26 @@ body {
                     margin: 0 16px 0 8px;
                 }
             }
-            .mobile-num {
-                p {
-                    float: left;
-                    font-size: 14px;
-                    line-height: 50px;
-                    margin: 0 16px;
-                    color: #000000;
-                    span {
-                        border-top: 6px dashed;
-                        border-right: 5px solid transparent;
-                        border-left: 5px solid transparent;
-                        line-height: 50px;
-                        margin: 0 16px 0 8px;
-                    }
-                    i {
-                        font-size: 20px;
-                        margin: 0;
-                        color: rgba(0, 0, 0, .1);
-                        line-height: 50px;
-                    }
-                }
+            div>input {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                float: left;
+                border: none;
+                background-color: rgba(0, 0, 0, 0);
+            }
+            #submit {
+                border-radius: 8px;
+                background: #007dff;
+                width: 310px;
+                font-size: 18px;
+                font-weight: 400;
+                display: block;
+                height: 50px;
+                color: #fff;
+                text-transform: uppercase;
+                cursor: pointer;
+                margin: 50px 65px 0;
             }
         }
     }

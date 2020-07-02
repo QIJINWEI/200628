@@ -1,16 +1,17 @@
 {
-  "name": "pinduoduo.com",
-  "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "jquery": "^3.5.1",
-    "requirejs": "^2.3.6"
-  }
+    "name": "pinduoduo.com",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cookie.js": "^5.0.2",
+        "jquery": "^3.5.1",
+        "requirejs": "^2.3.6"
+    }
 }

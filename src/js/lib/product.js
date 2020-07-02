@@ -29,7 +29,7 @@ define(['jquery', 'cookie'], function($, cookie) {
                     <input type="number" class="num" min="1" max="${res.num}" value="1">
                     <input type="button" class="add" value="加入购物车">
                     <div>
-                        ${res.details}
+                        ${res.product}
                     </div>
                     `;
 

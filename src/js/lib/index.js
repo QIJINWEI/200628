@@ -16,7 +16,7 @@ define(['jquery'], function($) {
                         let pic = JSON.parse(elm.pic);
                         console.log(pic);
                         temp += `<li>
-                        <a href="${baseUrl}/src/html/details.html?id=${elm.id}" target="_blank">
+                        <a href="${baseUrl}/src/html/product.html?id=${elm.id}" target="_blank">
                         <div class="phone01">
                             <img src="${baseUrl}/src${pic[0].src}" alt="${baseUrl}/src${pic[0].title}">
                         </div>

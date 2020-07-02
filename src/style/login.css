@@ -174,33 +174,34 @@ body {
   border-radius: 10px;
 }
 
-#contain #right-aside ul:nth-child(odd) {
+#contain #right-aside ul:nth-of-type(1) {
   display: inline-block;
   margin-top: 40px;
   margin-left: 75px;
 }
 
-#contain #right-aside ul:nth-child(odd) li:nth-child(odd) {
+#contain #right-aside ul:nth-of-type(1) li:nth-child(2n+1) a {
   color: #007dff;
+  text-decoration: none;
 }
 
-#contain #right-aside ul:nth-child(odd) li:nth-child(even) {
+#contain #right-aside ul:nth-of-type(1) li:nth-child(2n) {
   color: #c2c2c2;
 }
 
-#contain #right-aside ul:nth-child(even) {
+#contain #right-aside ul:nth-of-type(2) {
   display: inline-block;
   margin-top: 30px;
   margin-left: 25px;
 }
 
-#contain #right-aside ul:nth-child(even) img {
+#contain #right-aside ul:nth-of-type(2) img {
   width: 40px;
   height: 40px;
   margin-left: 30px;
 }
 
-#contain #right-aside ul:nth-child(even) li {
+#contain #right-aside ul:nth-of-type(2) li {
   cursor: pointer;
 }
 

@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="../js/require.js" data-main="../js/main.product.js"></script>
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../style/details.min.css">
+    <link rel="stylesheet" href="../style/product.min.css">
     <link rel="stylesheet" href="../style/commom.css">
 </head>
 
@@ -109,7 +110,9 @@
                     <a href="#">
                         <img src="../img/index/png/SXppnESYv4K11DBxDFc2.png" alt="logo">
                     </a>
+
                 </div>
+
                 <ul class="nav nav-pills">
                     <li>
 
@@ -145,7 +148,7 @@
 
     <div class="nav_main">
         <!-- 轮播图左侧导航 -->
-        <div class="nav">
+        <div class="nav hide">
             <ol class="nav_li">
                 <a href="javascript:;">
                     <li class="area_0">
@@ -256,6 +259,45 @@
                 </a>
             </ol>
         </div>
+    </div>
+
+    <!-- product -->
+    <div id="product">
+        <div class="product">
+            <div class="product_left">
+                <div class="topdet_pic">
+                    <!-- 小放大镜里的图片 -->
+                    <img class="spic" src="" alt="">
+                    <!-- 放大镜 -->
+                    <div class="fdj"></div>
+                </div>
+                <a class="leftarrow" href="javascript:;">&lt;</a>
+                <div class="botdet_pic">
+                    <ul class="smallpic"></ul>
+                </div>
+                <a class="rightarrow" href="javascript:;">&gt;</a>
+            </div>
+            <div class="product_right">
+                <!-- 镜子 -->
+                <div class="jz">
+                    <!-- 镜子里的图片 -->
+                    <img class="bpic" src="" alt="">
+                </div>
+                <div class="bottom_box">
+                    <div class="amount">
+                        <div class="amount_left"><input type="text" name="" id="count" value="1"></div>
+                        <div class="amount_right">
+                            <span>+</span><span>-</span>
+                        </div>
+                    </div>
+                    <div class="join">加入购物车</div>
+                    <a href="./cart.html" target="_blank">
+                        <div class="join_in">进入购物车</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
