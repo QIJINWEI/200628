@@ -54,29 +54,29 @@
             <div role="tabpanel" class="tab-pane active" id="home">
                 <h2>华为帐号注册</h2>
                 <h3>已有账号，<a href="http://localhost/vmall.com/src/html/login.html">去登录></a></h3>
+                <form action="../../interface/registry.php" method="POST">
+                    <div class="cty-select">
+                        <p>国家/地区</p>
+                        <i>中国<span class="caret"></span></i>
+                    </div>
+                    <div class="input-group mobile-num">
+                        <input type="text" class="form-control" aria-label="..." placeholder="请输入手机号" id="username" name="username">
+                    </div>
 
-                <div class="cty-select">
-                    <p>国家/地区</p>
-                    <i>中国<span class="caret"></span></i>
-                </div>
+                    <div class="input-group mobile-num">
+                        <input type="text" class="form-control" aria-label="..." placeholder="短信验证码">
+                    </div>
 
+                    <div class="input-group mobile-num">
+                        <input type="text" class="form-control" aria-label="..." placeholder="密码" id="password" name="password">
+                    </div>
 
-                <div class="input-group mobile-num">
-                    <input type="text" class="form-control" aria-label="..." placeholder="请输入手机号">
-                </div>
+                    <div class="input-group mobile-num">
+                        <input type="text" class="form-control" aria-label="..." placeholder="确认密码">
+                    </div>
+                    <input type="submit" class="btn btn-default" name="submit" id="submit" value="注册" disabled>
+                </form>
 
-                <div class="input-group mobile-num">
-                    <input type="text" class="form-control" aria-label="..." placeholder="短信验证码">
-                </div>
-
-                <div class="input-group mobile-num">
-                    <input type="text" class="form-control" aria-label="..." placeholder="密码">
-                </div>
-
-                <div class="input-group mobile-num">
-                    <input type="text" class="form-control" aria-label="..." placeholder="确认密码">
-                </div>
-                <input type="submit" disabled class="btn btn-default" name="submit" id="submit" value="注册" disabled>
             </div>
         </div>
     </div>

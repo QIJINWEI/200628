@@ -1,26 +1,48 @@
 <?php
+    // 注册的业务逻辑
 
-require "conn.php";
+    // 1. 连接数据库
+    include('./conn.php');
+
+    // 2. 接收前端发过来的数据
+    // 3. 验证数据(用户名是否存在)
+    // 4. 根据验证的结果进行下一步  
+    //    用户名存在 提示用户  用户名已存在 跳转回注册页
+    //    用户名不存在  将用户提交的数据 写入数据库
+
+    // 2. 接收数据
+    $username = $_REQUEST['username'];
+    $password = $_REQUEST['password'];
+    $email = $_REQUEST['email'];
+    $phone = $_REQUEST['phone'];
+    $add = $_REQUEST['add'];
 
 
-//检测用户名是否存在
-if (isset($_POST['username'])) {
-    $username = $_POST['username'];
-    $result = $conn->query("select * from registry where username='$username'"); //结果有值，用户名存在。
-    if ($result->fetch_assoc()) { //结果有值，用户名存在。  1
-        echo true;
-    } else { //空，可以使用，不存在数据库中
-        echo false;
+    // 3. 查询用户名数据库中是否存在
+    $sql = "select * from users where user_name='$username'";
+
+    // 执行sql语句
+    $result = $mysqli->query($sql);
+
+    if($result->num_rows>0){ // 判断结果中数据大于0行
+        // 说明查询到了这个用户名
+        echo '<script>alert("用户名已存在");</script>';
+        echo '<script>location.href="http://localhost/vmall.com/src/html/register.html";</script>';
+        $mysqli->close();
+        die;
     }
-}
 
+    // 将用户传递过来的数据 写入数据库
+    $insertUser = "insert into users(user_name,user_password,user_email,user_phone,user_add)values('$username','$password','$email','$phone','$add')";
+    // echo $insertUser;
 
-//将数据提交到数据库
-if (isset($_POST['submit'])) {
-    $username = $_POST['username'];
-    $password = sha1($_POST['password']);
-    $repass=sha1($_POST['repass']);
-    $conn->query("insert registry values(null,'$username','$password',NOW())"); //进入数据库
-    //设置php跳转,跳转登录页面
-    header('location:http://localhost/VMALL.COM/src/login.html');
-}
+    $res = $mysqli->query($insertUser);
+
+    $mysqli->close();
+    
+    if($res){
+        echo '<script>alert("注册成功");</script>';
+        echo '<script>location.href="http://localhost/vmall.com/src/html/login.html";</script>';
+    }
+    
+?>
